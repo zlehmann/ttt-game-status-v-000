@@ -34,3 +34,13 @@ def won?(board)
     return win_result
   end
 end
+
+def full?(board)
+  if board.any? { |position| position == " " }
+    return false
+  else
+    return true
+  end
+end
+
+  
