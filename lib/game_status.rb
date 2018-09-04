@@ -58,3 +58,13 @@ def over?(board)
     return false
   end
 end
+
+def winner(board)
+  if won?(board) == false
+    return nil
+  else
+    token = board[won?(board)[0]]
+    return token
+  end
+end
+  
