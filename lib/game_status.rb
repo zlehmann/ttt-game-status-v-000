@@ -28,5 +28,9 @@ def won?(board)
       false
     end
   end
-  return win_result
+  if win_result.empty?
+    return false
+  else
+    return win_result
+  end
 end
